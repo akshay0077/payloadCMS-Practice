@@ -9,8 +9,11 @@ import { buildConfig } from 'payload/config'
 import Users from './collections/Users'
 import  Media  from './collections/Media'
 import  Pages  from './collections/Pages'
+import Header from './globals/Header'
+import Footer from './globals/Footer'
 
 export default buildConfig({
+  serverURL:'http://localhost:4000',
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
@@ -21,6 +24,10 @@ export default buildConfig({
     Media,
     Pages,
   
+  ],
+  globals:[
+    Header,
+    Footer,
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),

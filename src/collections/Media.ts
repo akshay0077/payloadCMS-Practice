@@ -1,4 +1,3 @@
-
 import { CollectionConfig } from 'payload/types';
 
 const Media: CollectionConfig = {
@@ -15,6 +14,7 @@ const Media: CollectionConfig = {
         {
           name: "alt",
           type: "text",
+          required:true
         },
       ],
 }

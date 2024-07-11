@@ -6,6 +6,7 @@ const Hero: Block = {
         singular:'Hero Blocks',
         plural:'Hero Blocks',
     },
+    imageURL: 'https://img.freepik.com/free-vector/gradient-particle-wave-background_23-2150517309.jpg?size=626&ext=jpg',
     fields:[
         {
             name:'heading',

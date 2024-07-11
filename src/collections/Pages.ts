@@ -1,6 +1,8 @@
 import { CollectionConfig } from 'payload/types'
+
 import Hero from  '../blocks/Hero'
 import TwoColumns from '../blocks/TwoColumns'
+
 
 const Pages: CollectionConfig = {
     slug:'pages',
@@ -15,13 +17,13 @@ const Pages: CollectionConfig = {
         {
             name:'name',
             label:'Name',
-            type:'text',
+            type: 'richText',
             required:true
         },
         {
             name:'slug',
             label:'Slug',
-            type:'text',
+            type: 'richText',
             required:true
         },
         {
